@@ -2,7 +2,7 @@ NAME
     Sim::Dispatcher - Event dispatcher for Sim
 
 VERSION
-    This document describes Sim::Dispatcher 0.02 released on June 2, 2007.
+    This document describes Sim::Dispatcher 0.03 released on June 2, 2007.
 
 SYNOPSIS
         use Sim::Dispatcher;

@@ -3,7 +3,7 @@ package Sim::Dispatcher;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Carp qw( carp croak );
 
@@ -100,7 +100,7 @@ Sim::Dispatcher - Event dispatcher for Sim
 
 =head1 VERSION
 
-This document describes Sim::Dispatcher 0.02 released
+This document describes Sim::Dispatcher 0.03 released
 on June 2, 2007.
 
 =head1 SYNOPSIS

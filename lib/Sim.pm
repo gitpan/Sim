@@ -7,7 +7,7 @@ use vars qw( $AUTOLOAD );
 use Sim::Dispatcher;
 use Sim::Clock;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 our ($Clock, $Dispatcher);
 
@@ -32,7 +32,7 @@ Sim - Simulator engine for discrete events
 
 =head1 VERSION
 
-This document describes Sim 0.02 released on 2 June, 2007.
+This document describes Sim 0.03 released on 2 June, 2007.
 
 =head1 SYNOPSIS
 
@@ -78,6 +78,30 @@ See L<Sim::Dispatcher> for more information.
 All the methods of L<Sim::Dispatcher> are available for this class, but
 they are exposed as static methods only :)
 
+=head1 TODO
+
+=over
+
+=item *
+
+Add cookbooks for M/M/1 and M/M/m queueing problems.
+
+=item *
+
+Add support for vectorized timestamp (i.e. something like 3 sec + 3 * delta).
+
+=item *
+
+Add missing features compared to SimPy in the Python world.
+
+=back
+
+=head1 BUGS
+
+There must be some serious bugs lurking somewhere; if you find one,
+please consider firing off a report to
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Sim>.
+
 =head1 VERSION CONTROL
 
 You can always get the latest version of the source from the following
@@ -93,13 +117,13 @@ If you do want a commit bit and become a coauthor, please let me know :)
 
 I use Devel::Cover to test the code coverage of the test suite:
 
----------------------------- ------ ------ ------ ------ ------ ------ ------
-File                           stmt   bran   cond    sub    pod   time  total
----------------------------- ------ ------ ------ ------ ------ ------ ------
-blib/lib/Sim.pm               100.0   50.0   66.7  100.0    n/a    5.7   91.7
-blib/lib/Sim/Clock.pm         100.0   83.3    n/a  100.0  100.0    9.0   97.3
-blib/lib/Sim/Dispatcher.pm     94.6   75.0  100.0  100.0  100.0   31.1   92.2
----------------------------- ------ ------ ------ ------ ------ ------ ------
+ ---------------------------- ------ ------ ------ ------ ------ ------ ------
+ File                           stmt   bran   cond    sub    pod   time  total
+ ---------------------------- ------ ------ ------ ------ ------ ------ ------
+ blib/lib/Sim.pm               100.0   50.0   66.7  100.0    n/a    5.7   91.7
+ blib/lib/Sim/Clock.pm         100.0   83.3    n/a  100.0  100.0    9.0   97.3
+ blib/lib/Sim/Dispatcher.pm     94.6   75.0  100.0  100.0  100.0   31.1   92.2
+ ---------------------------- ------ ------ ------ ------ ------ ------ ------
 
 =head1 AUTHOR
 

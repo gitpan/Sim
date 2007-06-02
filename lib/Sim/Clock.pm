@@ -4,7 +4,7 @@ use Carp qw(croak carp);
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub new ($$) {
 	my $class = ref $_[0] ? ref shift : shift;
@@ -41,7 +41,7 @@ Sim::Clock - Simulation clock used by the dispatcher
 
 =head1 VERSION
 
-This document describes Sim::Clock 0.02 released on
+This document describes Sim::Clock 0.03 released on
 2 June, 2007.
 
 =head1 SYNOPSIS
