@@ -10,7 +10,7 @@ requires        ('Carp');
 
 #tests('t/*.t t/*/*.t t/*/*/*t t/*/*/*/*.t');
 
-no_index('sample');
+no_index        (directory => 'sample');
 auto_install;
 WriteAll;
 

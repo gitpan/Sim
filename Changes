@@ -1,5 +1,9 @@
 Changes for Sim
 
+0.02 - 2007-06-02
+* fixed the no_index call in Makefile.PL
+* added $VERSION var to Sim::Clock
+
 0.01 - 2007-06-02
 * initial CPAN release
 

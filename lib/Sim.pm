@@ -7,7 +7,7 @@ use vars qw( $AUTOLOAD );
 use Sim::Dispatcher;
 use Sim::Clock;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 our ($Clock, $Dispatcher);
 
@@ -32,7 +32,7 @@ Sim - Simulator engine for discrete events
 
 =head1 VERSION
 
-This document describes Sim 0.01 released on 2 June, 2007.
+This document describes Sim 0.02 released on 2 June, 2007.
 
 =head1 SYNOPSIS
 
